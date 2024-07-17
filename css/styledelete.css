@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+header{
+    background-color: white;
+    height: 5vh;
+    padding: 10px;
+    padding-left:150px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px rgb(152, 142, 142);
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo img{
+    width: 30px;
+}
+
+.logout{
+    margin-left: 120px;
+}
+
+header img{
+    margin-right: 8px;
+    width: 23px;
+}
+
+.foperfil{
+    width: 40px;
+    height: auto;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    margin: 1vw;
+    text-align: center;
+}
+
+.text p{
+    margin: 0.5vw;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 60px;
+    width: 1420px;
+    height: 700px;
+    border-radius: 18px;
+    background-color: rgb(226, 224, 224);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    margin-right: 5%;
+    margin-left: 20px;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    height: 40px;
+    margin-top: 2%;
+    background-color: white;
+    border: solid 1px rgb(79, 77, 77);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-container2 div{
+    margin-right: 5%;
+    margin-left: 20px;
+}
+
+
+.grid-container3{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    height: 60px;
+    background-color: white;
+    border: solid 1px rgb(79, 77, 77);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.grid-container3 div{
+    width: 200px;
+    border: solid;
+
+}
