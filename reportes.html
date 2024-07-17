@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reportes.css">
+    <script src="https://kit.fontawesome.com/d198076214.js" crossorigin="anonymous"></script>
+    <title>Reportes</title>
+</head>
+<body>
+    <header class="page-principal">
+        <nav class="navegacion-principal">
+            <div class="contenedor-links">
+                    <a class="link__item" href="#"><img class="img-nav" src="/recursos/icon-mas.svg" alt="icon-mas">Añadir</a>
+
+                    <a class="link__item" href="#"><img class="img-nav" src="/recursos/Icon open-reload.svg" alt="icon-reload">Refrescar</a>
+
+                    <a class="link__item" href="#"><img class="img-nav" src="/recursos/icon-basura.svg" alt="bote-basura">Eliminar</a>
+
+                    <a class="link__item logo-principal" href="#"><img class="img-nav logo-empresaK" src="/recursos/logo.svg" alt="logo-empresa"></a>
+
+                    <a class="link__item" href="/reportes.html"><img class="img-nav" src="/recursos/icon-bug.svg" alt="icon-bug">Reportar</a>
+
+                    <a class="link__item" href="#"><img class="img-nav" src="/recursos/icon-pregunta.svg" alt="icon-interrogacion">Ayuda</a>
+            </div>
+            <div class="log-out">
+                <a href="#"><img class="settings" src="recursos/icon-configuracion.svg" alt="icon-configuracion"></a>
+
+                <a href="#"><img class="notification" src="recursos/icon-campana.svg" alt="icon-campana" ></a>
+
+                <a href="#"><img class="photo-user" src="recursos/foto-user.png" alt="photo-user" ></a>
+            </div>  
+        </nav>
+    </header>
+    <section class="vista-principal">
+        <div class="formulario-incidentes">
+            <div class="text-incidentes">
+                <h2 class="tittle-section">Reporte de Incidentes</h2>
+                <p>Para reportar un incidente del flujo normal de la aplicación llena el siguiente formulario.</p>
+            </div>
+            <div class="requisitos">
+                <form action="post" class="form-requisitos">
+                    <div class="form-input">
+                        <label for="tipo">Tipo de incidente
+                            <select name="incidente" aria-label="Seleccione el tipo de incidente" id="tipo">
+                                <option value="tipo1">Error en la funcionalidad</option>
+                                <option value="tipo2">Errores de interfaz de usuario</option>
+                                <option value="tipo3">Errores de rendimiento</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-input">
+                        <label for="prioridad">Prioridad
+                            <select name="nivel-prioridad" aria-label="Seleccione la prioridad" id="prioridad">
+                                <option value="prioridad1">Error en la funcionalidad</option>
+                                <optsion value="prioridad2">Errores de interfaz de usuario</optsion>
+                                <option value="prioridad3">Errores de rendimiento</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form_input">
+                        <label for="descripcion">Descripción del incidente</label>
+                        <textarea placeholder="Haz una descripción detallada del incidente."maxlength="140" rows="8"  id="descripcion"></textarea> 
+                    </div>
+                </form>
+            </div>
+            <div class="boton-texto">
+                <button class="button-reporte">Generar</button>
+            </div>
+        </div>
+        <div class="personal">
+            <div class="contenedor-item">
+                <div class="personal__item">
+                    <div class="foto-perona">
+                        <img class="img-encargados" src="/recursos/chica.jpg" alt="chica">
+                    </div>
+                    <div class="texto-item">
+                        <p>Edisabeth Gelves García</p>
+                        <p>Gestora de Incidentes</p>
+                        <p>edisabeth@gmail.com</p>
+                        <div class="iconos">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal__item">
+                    <div class="foto-perona">
+                        <img class="img-encargados" src="/recursos/abuelo.jpg" alt="abuelo">
+                    </div>
+                    <div class="texto-item">
+                        <p>Wilmer Gelves García</p>
+                        <p>Product owner</p>
+                        <p>wil_bello@gemail.com</p>
+                        <div class="iconos">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

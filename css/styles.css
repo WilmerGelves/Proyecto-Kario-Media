@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url(/fuentes/MYRIADPRO-REGULAR.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro light';
+    src: url(/fuentes/MyriadPro-Light.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Italic';
+    src: url(/fuentes/MYRIADPRO-BOLDIT.woff);
+    font-style: italic;
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url(/fuentes/MYRIADPRO-BOLD.woff);
+    font-style: bold;
+    font-weight: bold;
+}
+/*Entrada principal*/
 body{
     margin: 0;
     padding: 0;
@@ -5,8 +32,17 @@ body{
     width: 100%;
     height: 100vh;
     font-size: 16px;
+    font-family: 'Myriad Pro light',sans-serif;
+    overflow: hidden;
 }
 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+.imagen-entrada{
     width: 100%;
     height: 100vh;
     background-image: url(/recursos/fondo.png);
@@ -17,9 +53,353 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: absolute;
+    z-index: 1;
 }
 img{
-   display: inline-block;
-   width:300px ;
+    display: inline-block;  
+    
+}
+.img-trancision{
+    animation-name:entradaLogo,
+                   entradaLogo2;
+    animation-duration: 3s,3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s ,12s;
+    width:15vw;
+}
+
+/*Seccion del login*/
+.contenedor-login{
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    animation-name: entradaFormulario,
+                    desplazamiento1;
+    animation-fill-mode: forwards;
+    animation-duration: 7s,1s;
+    animation-delay: 3s,7s;
+    animation-timing-function:ease;
+    background-color: white;
+    position: absolute;
+}
+.img-media{
+    width: 7vw;
+}
+.logo-texto{
+    text-align: center;
+}
+.logo-texto h2{
+    font-size: 2em;
+    line-height: .5em;
+}
+.datos{
+margin: 0 20%;
+box-sizing: border-box;
+}
+input,label{
+    width: 100%;
+    margin-bottom:1.526vh;
+    padding: 0.926vh 0.521vw;
+    box-sizing: border-box;
+}
+label{
+    font-size: large;
+}
+input{
+    border: 1px solid rgb(190, 186, 186);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: large;
+}
+
+.boton-texto button{
+    padding: 1em 3em;
+    border-radius: 25px;
+    background-color: rgb(255,114, 27);
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+}
+.boton-texto{
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/*seccion de mensaje de bienvenida*/
+.bienvenida-user{
+    position: absolute;
+    background-color: white;
+    padding: 2.5em 10vw;
+    line-height: 1em;
+    border-radius: 30px;
+    animation-name:desplazamiento2,focusBienvenida;
+    animation-duration: 1.3s,1s;
+    animation-timing-function:ease;
+    animation-delay: 8s,11s;
+    animation-fill-mode: forwards; 
+    text-align: center;
+}
+.media-user{
+    width: 5vw;
+}
+.bienvenida-user h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.bienvenida-user p{
+    opacity: .98;
+}
+
+.foto-user{
+    width: 4.5vw;
+}
+
+/*Vista principal de la aplicación */
+.page-principal{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    /*animation-name: page-principal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 13s;*/
+    z-index: 5;
+}
+.link__item,.img-nav{
+    display: inline-block;
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+}
+.contenedor-links{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.8em;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+.logo-principal{
+    width: 3vw;
+}
+.log-out{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo-user{
+    width: 4em;
+}
+
+
+/*Medias -movil*/
+@media (max-width: 480px) {
+    main{
+        align-items: center;
+    }
+    .imagen-entrada{
+        background-position:center;
+    }
+    .img-trancision{
+        width: 20vw;
+    }
+
+    /*Sección formulario*/
+    .contenedor-login{
+        width: 100%;
+        height: 100vh;
+        border: 0;
+        border-radius: 0;
+    }
+    .img-media{
+        width: 15vw;
+        margin-top: 1em;
+    }
+    .logo-texto h2{
+    font-size: 1.5em;
+    line-height: .5em;
+    }
+    .logo-texto p{
+        font-size: small;
+    }
+    input,label{
+        width: 100%;
+        margin-bottom:1vh;
+        padding: 0.526vh 0.521vw;
+        box-sizing: border-box;
+    }
+    label{
+        font-size: small;
+    }
+    .boton-texto button{
+        padding: .5em 1em;
+        font-size: 1em;
+    }
+    .boton-texto{
+        text-align: center;
+        font-size: .8em;
+    }
+    .boton-texto p{
+        text-align: center;
+        font-size: .7em;
+    }
+    
+    /*Sección de bienvenidad*/
+   
+    .media-user{
+        width: 17vw;
+    }
+    .bienvenida-user h2{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    .bienvenida-user p{
+        opacity: .98;
+        font-size:small;
+    }
+    
+    .foto-user{
+        width: 15vw;
+    }
+    
+    /*Vista principal de la aplicación */
+    .page-principal{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        overflow: hidden;
+        /*animation-name: page-principal;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 13s;*/
+        z-index: 5;
+    }
+    .navegacion-principal{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 2px solid gray;
+    }
+    .contenedor-links{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenedor-links a{
+        width: 33.3%;
+        padding: 10px;
+    }
+    .logo-principal{
+        padding: 10px;
+        order: -1;
+    }
+    .log-out{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .photo-user{
+        width: 4em;
+    }
+    
+}
+
+@keyframes entradaLogo{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes entradaLogo2{
+    0%{
+        opacity:0;
+        z-index: 4;
+    }
+    50%{
+        opacity: 1;
+        z-index: 4;
+    }
+    100%{
+        opacity: 0;
+        z-index: 4;
+    }
+}
+@keyframes entradaFormulario{
+    0%{
+        opacity:0;
+        z-index: 2;
+    }
+    50%{
+        opacity: 1;
+        z-index: 2;
+    }
+    100%{
+        opacity: 0;
+        z-index: 2;
+    }
+}
+@keyframes desplazamiento1{
+    100%{
+        transform: translateX(-200%);
+    }
+}
+@keyframes desplazamiento2{
+    0%{
+        opacity: 1;
+        transform: translateX(-400%);
+        z-index: 3;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 3;
+    }
+}
+@keyframes focusBienvenida{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes page-principal{
+    100%{
+        z-index: 5;
+        background-color: white;
+    }
 }

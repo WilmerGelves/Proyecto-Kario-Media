@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url(/fuentes/MYRIADPRO-REGULAR.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro light';
+    src: url(/fuentes/MyriadPro-Light.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Italic';
+    src: url(/fuentes/MYRIADPRO-BOLDIT.woff);
+    font-style: italic;
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url(/fuentes/MYRIADPRO-BOLD.woff);
+    font-style: bold;
+    font-weight: bold;
+}
+/*Entrada principal*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Myriad Pro light',sans-serif;
+ 
+}
+/* Navegación */
+.page-principal{
+    width: 100%;
+    background-color: white;
+}
+.link__item,.img-nav{
+    display: inline-block;
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+}
+.contenedor-links{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.8em;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+.logo-principal{
+    width: 3vw;
+}
+.log-out{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo-user{
+    width: 4em;
+}
+
+/*Vista principal*/
+.vista-principal{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 50px;
+}
+/*Formulario*/
+
+.formulario-incidentes{
+    border: 2px solid rgb(197, 190, 190);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    padding: 0 1em 2em 1em;
+}
+.text-incidentes{
+    width: 80%;
+}
+.text-incidentes h2{
+    text-align: center;
+    font-size: 2em;
+}
+.text-incidentes p{
+    text-align: justify;
+    opacity: .9;
+    font-size: 1.2em;
+}
+
+.requisitos{
+    width: 80%;
+}
+label,select,textarea{
+    width: 100%;
+}
+label{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+select{
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: rgb(153, 153, 153);
+    background-color:rgb(227, 227, 227);
+}
+textarea{
+    min-width: 100%;
+    resize:none;
+    font-size: 1.2em;
+    background-color: rgb(227, 227, 227);
+    border: none;
+    border-radius: 10px;
+    color: rgb(153, 153, 153);
+}
+
+.boton-texto{
+    margin-top: 1em;
+}
+button{
+    padding: 1em 4em;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 114, 33);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*Sección encargados*/
+.personal{
+    width: 30%;
+}
+.contenedor-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+.personal__item{
+    display: flex;
+    border: 2px solid rgb(197, 190, 190);
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+.img-encargados{
+    width: 200px;
+    border-radius: 50%;
+}
+.texto-item{
+    margin-left: 20px;
+    font-size:1.5em;
+    line-height: 1em;
+}
+/*Medias -movil*/
+@media (max-width: 480px) { 
+    /*Navegacion*/
+    .page-principal{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+    }
+    .navegacion-principal{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 2px solid gray;
+    }
+    .contenedor-links{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenedor-links a{
+        width: 33.3%;
+        padding: 10px;
+    }
+    .logo-principal{
+        padding: 10px;
+        order: -1;
+    }
+    .log-out{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .photo-user{
+        width: 4em;
+    }
+    
+}

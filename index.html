@@ -8,9 +8,69 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="imagen-entrada">
-        <img src="recursos/logo.svg" alt="logo-empresa">
+
+    <main class="login-ingreso">
+        <div class="imagen-entrada">
+            <img class="img-trancision" src="recursos/logo.svg" alt="logo-empresa">
+        </div>
+        <div class="contenedor-login">
+            <div class="logo-texto">
+                <img class="img-media" src="/recursos/kario-media.svg" alt="kario-media">
+                <h2 class="bienvenida">Bienvenido al panel digital de</h2>
+                <h2 class="bienvenida">Kario Media</h2>
+                <p>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
+            </div>
+            <div class="datos">
+                <form action="post" class="formulario-login">
+                    <div class="form-input">
+                        <label for="user">Usuario
+                            <input id="user" type="text" name="cedula" required>
+                        </label>
+                    </div>
+                    <div class="form-input">
+                        <label for="contraseña">Contraseña
+                            <input id="contraseña" type="password" name="cedula" required>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="boton-texto">
+                <button class="ingreso">Ingresar al panel</button>
+                <p>¿Tienes problemas para entrar?Por favor contactarse con asistencia técnica lo más pronto posible</p>
+            </div>
+        </div>
+        <div class="bienvenida-user">
+            <img class="media-user" src="/recursos/kario-media.svg" alt="kario-media">
+            <h2 class="text-bienvenida">Bienvenido de nuevo</h2>
+            <img class="foto-user" src="/recursos/foto-user.png" alt="user">
+            <h2 class="text-bienvenida">Pedro Felipe Gómez Bonilla</h2>
+            <p>Usuario Administrador</p>
+        </div>
+        <div class="page-principal">
+            <nav class="navegacion-principal">
+                <div class="contenedor-links">
+                        <a class="link__item" href="#"><img class="img-nav" src="/recursos/icon-mas.svg" alt="icon-mas">Añadir</a>
+
+                        <a class="link__item" href="#"><img class="img-nav" src="/recursos/Icon open-reload.svg" alt="icon-reload">Refrescar</a>
+
+                        <a class="link__item" href="#"><img class="img-nav" src="/recursos/icon-basura.svg" alt="bote-basura">Eliminar</a>
+
+                        <a class="link__item logo-principal" href="#"><img class="img-nav logo-empresaK" src="/recursos/logo.svg" alt="logo-empresa"></a>
+
+                        <a class="link__item" href="/reportes.html"><img class="img-nav" src="/recursos/icon-bug.svg" alt="icon-bug">Reportar</a>
+
+                        <a class="link__item" href="#"><img class="img-nav" src="/recursos/icon-pregunta.svg" alt="icon-interrogacion">Ayuda</a>
+                </div>
+                <div class="log-out">
+                    <a href="#"><img class="settings" src="recursos/icon-configuracion.svg" alt="icon-configuracion"></a>
+
+                    <a href="#"><img class="notification" src="recursos/icon-campana.svg" alt="icon-campana" ></a>
+
+                    <a href="#"><img class="photo-user" src="recursos/foto-user.png" alt="photo-user" ></a>
+                </div>  
+            </nav>
+        </div>
     </main>
-    
+
 </body>
 </html>
