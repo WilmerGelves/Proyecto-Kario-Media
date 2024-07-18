@@ -106,11 +106,11 @@ body{
 }
 .text-incidentes h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 .text-incidentes p{
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .requisitos{
@@ -120,11 +120,11 @@ label,select,textarea{
     width: 100%;
 }
 label{
-    font-size: 1.2em;
+    font-size: .9em;
     font-weight: bold;
 }
 select{
-    padding: 1em;
+    padding: .9em;
     border: none;
     border-radius: 10px;
     font-size: 1em;
@@ -134,7 +134,7 @@ select{
 textarea{
     min-width: 100%;
     resize:none;
-    font-size: 1.2em;
+    font-size: .9em;
     background-color: rgb(227, 227, 227);
     border: none;
     border-radius: 10px;
@@ -144,11 +144,11 @@ textarea{
     margin-top: 1em;
 }
 button{
-    padding: .8em 3em;
+    padding: .7em 2.8em;
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: rgb(255, 114, 33);
-    font-size: 1.2em;
+    font-size: .8em;
     font-weight: bold;
 }
 
@@ -177,7 +177,7 @@ button{
 }
 .texto-item{
     margin-left: 20px;
-    font-size:1.2em;
+    font-size:1em;
 }
 .texto-item p{
     line-height: 0;
