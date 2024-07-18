@@ -1,17 +1,40 @@
-*{
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url(/fuentes/MYRIADPRO-REGULAR.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro light';
+    src: url(/fuentes/MyriadPro-Light.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Italic';
+    src: url(/fuentes/MYRIADPRO-BOLDIT.woff);
+    font-style: italic;
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url(/fuentes/MYRIADPRO-BOLD.woff);
+    font-style: bold;
+    font-weight: bold;
+}
+/*Entrada principal*/
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Myriad Pro light',sans-serif;
 }
-
-body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: sans-serif;
-}
-
-
+/* Navegación */
 .page-principal{
     width: 100%;
     background-color: white;
