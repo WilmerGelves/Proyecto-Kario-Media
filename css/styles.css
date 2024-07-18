@@ -91,8 +91,11 @@ img{
     text-align: center;
 }
 .logo-texto h2{
-    font-size: 2em;
+    font-size: 1.3em;
     line-height: .5em;
+}
+.logo-texto p{
+    font-size: .8em;
 }
 .datos{
 margin: 0 20%;
@@ -101,31 +104,34 @@ box-sizing: border-box;
 input,label{
     width: 100%;
     margin-bottom:1.526vh;
-    padding: 0.926vh 0.521vw;
+    padding: 0.6vh 0.4vw;
     box-sizing: border-box;
 }
 label{
-    font-size: large;
+    font-size: .8em;
 }
 input{
     border: 1px solid rgb(190, 186, 186);
     border-radius: 10px;
-    padding: 15px;
-    font-size: large;
+    padding: 5px 5px;
+    font-size: 1em;
 }
 
 .boton-texto button{
-    padding: 1em 3em;
+    padding: 1em 2em;
     border-radius: 25px;
     background-color: rgb(255,114, 27);
     color: white;
-    font-size: 1.1em;
+    font-size: .8em;
     font-weight: bold;
     border: none;
 }
 .boton-texto{
     text-align: center;
     font-size: 1em;
+}
+.boton-texto p{
+    font-size: .65em;
 }
 
 
@@ -147,12 +153,12 @@ input{
     width: 5vw;
 }
 .bienvenida-user h2{
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .bienvenida-user p{
-    opacity: .98;
+    opacity: .8em;
 }
 
 .foto-user{
@@ -164,11 +170,10 @@ input{
     width: 100%;
     height: 100vh;
     background-color: white;
-    /*animation-name: page-principal;
+    animation-name: page-principal;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 13s;*/
-    z-index: 5;
+    animation-delay: 13s;
 }
 .link__item,.img-nav{
     display: inline-block;
@@ -177,7 +182,7 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px;/**/
     border-bottom: 2px solid gray;
 }
 .contenedor-links{
@@ -192,11 +197,14 @@ input{
     align-items: center;
     gap:.8em;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;/**/
     font-weight: bold;
     color: black;
 }
-.logo-principal{
+.img-nav{/**/
+    width: 1.5em;
+}
+.logo-empresaK{/**/
     width: 3vw;
 }
 .log-out{
@@ -206,8 +214,8 @@ input{
     align-items: center;
 }
 
-.photo-user{
-    width: 4em;
+.photo-user{/**/
+    width: 3em;
 }
 
 
@@ -311,6 +319,10 @@ input{
     .contenedor-links a{
         width: 33.3%;
         padding: 10px;
+        font-size: 1em;
+    }
+    .contenedor-links img{
+        width: 1.5em;
     }
     .logo-principal{
         padding: 10px;
