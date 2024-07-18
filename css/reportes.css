@@ -85,12 +85,12 @@ body{
 /*Vista principal*/
 .vista-principal{
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: center; 
     align-items: center;
+    gap: 100px;
     margin-top: 50px;
 }
 /*Formulario*/
-
 .formulario-incidentes{
     border: 2px solid rgb(197, 190, 190);
     border-radius: 15px;
@@ -99,7 +99,7 @@ body{
     align-items: center;
     width: 35%;
     padding: 0 1em 2em 1em;
-    margin-bottom: 50px;
+    height: 80vh;
 }
 .text-incidentes{
     width: 80%;
@@ -154,7 +154,7 @@ button{
 
 /*Sección encargados*/
 .personal{
-    width: 45%;
+    width: 35%;
     margin: 0;
 }
 .contenedor-item{
