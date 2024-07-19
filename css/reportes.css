@@ -96,6 +96,7 @@ body{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 35%;
     padding: 0 1em 2em 1em;
