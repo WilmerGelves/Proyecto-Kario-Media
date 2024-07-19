@@ -82,78 +82,81 @@ body{
     width: 3em;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
 }
 
-.section1{
+.section1 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     padding: 35px;
-    width: 1420px;
-    height: 700px;
+    width: 80vw;
+    height: 83vh;
     border-radius: 18px;
     background-color: rgb(226, 224, 224);
 }
 
-.head{
+.head {
     text-align: center;
     font-size: 1.1rem;
 }
 
-.imge{
+.imge {
     display: flex;
     justify-content: center;
 }
 
-.container1{
+.container1 {
     display: flex;
     justify-content: space-between;
 }
 
-.colum1{
+.colum1 {
     display: flex;
     flex-direction: column;
 }
 
-.container1 .form{
+.container1 .form {
+    font-weight: bold;
     margin-top: 30px;
-    width: 400px;
+    width: 26vw;
     display: flex;
     flex-direction: column;
+
 }
 
-.container1 select{
+.container1 select {
+    font-size: 1rem;
     padding: 10px;
     border-radius: 5px;
     height: 50px;
 }
 
-.container1 input{
+.container1 input {
     padding: 10px;
     border: solid 1px rgb(138, 136, 136);
-    height: 50px;
     border-radius: 5px;
+    font-size: 1.1rem;
 }
 
-.container1 textarea{
+.container1 textarea {
+    font-size: 1.1rem;
     padding: 20px;
-    height: 150px;
+    height: 13.5vh;
     border-radius: 5px;
-    font-size: 1rem;
     resize: none;
 }
 
-.boton{
+.boton {
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
-button{
-    border: #f37730 ;
+button {
+    border: #f37730;
     background-color: #f37730;
     border-radius: 7px;
     width: 150px;
@@ -162,6 +165,140 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #f37830ba;
+}
+
+
+    /*forms*/
+
+@media (max-width: 1200px) {
+    .section1 {
+        width: 50vw;
+        height: auto;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1 .form {
+        width: 90%;
+    }
+
+    .container1 select, .container1 input, .container1 textarea {
+        font-size: 0.9rem;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .head {
+        font-size: 1rem;
+    }
+
+    .container1 select, .container1 input, .container1 textarea {
+        font-size: 0.9rem;
+        width: 30vw;
+    }
+
+    .boton button {
+        width: 120px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 600px) { 
+    /*Navegacion*/
+    .page-principal{
+        width: 100%;
+        height: auto    ;
+        background-color: white;
+    }
+    .navegacion-principal{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 2px solid gray;
+    }
+    .contenedor-links{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenedor-links a{
+        width: 33.3%;
+        padding: 10px;
+        font-size: 1em;
+    }
+    .contenedor-links img{
+        width: 1.5em;
+    }
+    .logo-principal{
+        padding: 10px;
+        order: -1;
+    }
+    .log-out{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .photo-user{
+        width: 4em;
+    }
+}
+
+
+
+@media (max-width: 480px) { 
+    /*Navegacion*/
+    .page-principal{
+        width: 100%;
+        height: auto    ;
+        background-color: white;
+    }
+    .navegacion-principal{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 2px solid gray;
+    }
+    .contenedor-links{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenedor-links a{
+        width: 33.3%;
+        padding: 10px;
+        font-size: 1em;
+    }
+    .contenedor-links img{
+        width: 1.5em;
+    }
+    .logo-principal{
+        padding: 10px;
+        order: -1;
+    }
+    .log-out{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .photo-user{
+        width: 4em;
+    }
 }

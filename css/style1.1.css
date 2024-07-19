@@ -136,6 +136,11 @@ section{
     width: 9vw;
 }
 
+.item img{
+    height: 6vh;
+    border-radius: 50%;
+}
+
 .action{
     margin-top: 60px;
     width: 100px;
@@ -175,3 +180,48 @@ button:hover{
     background-color: #f37830b0;
 }
 
+@media (max-width: 480px) { 
+    /*Navegacion*/
+    .page-principal{
+        width: 100%;
+        height: auto    ;
+        background-color: white;
+    }
+    .navegacion-principal{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 2px solid gray;
+    }
+    .contenedor-links{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenedor-links a{
+        width: 33.3%;
+        padding: 10px;
+        font-size: 1em;
+    }
+    .contenedor-links img{
+        width: 1.5em;
+    }
+    .logo-principal{
+        padding: 10px;
+        order: -1;
+    }
+    .log-out{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .photo-user{
+        width: 4em;
+    }
+
+}
