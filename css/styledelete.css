@@ -1,7 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url(/fuentes/MYRIADPRO-REGULAR.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro light';
+    src: url(/fuentes/MyriadPro-Light.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Italic';
+    src: url(/fuentes/MYRIADPRO-BOLDIT.woff);
+    font-style: italic;
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url(/fuentes/MYRIADPRO-BOLD.woff);
+    font-style: bold;
+    font-weight: bold;
 }
 
 body{
@@ -72,26 +93,54 @@ section{
     margin: 0.5vw;
 }
 
-
 .container{
     display: flex;
-    justify-content: space-between;
-    padding: 60px;
-    width: 1420px;
-    height: 700px;
+    justify-content: center;
+    padding: 80px;
+    width: 1520px;
+    height: 600px;
     border-radius: 18px;
     background-color: rgb(226, 224, 224);
 }
 
+.item{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+}
+
+
+.container1{
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container3{
+    height: 65px;
+    background-color: white;
+    border: solid 1px rgb(79, 77, 77);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
 .action{
-    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    margin-left: 2%;
+
 }
 
 .hea{
+    border: solid;
     display: flex;
     align-items: center;
     height: 60px;
@@ -102,6 +151,7 @@ section{
     display: flex;
     align-items: center;
     height: 60px;
+
 }
 
 button{
@@ -115,31 +165,3 @@ button{
 button:hover{
     background-color: #f5823fb6;
 }
-
-
-.container1{
-    height: 60px;
-    width: 1150px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.item{
-    margin-right: 9%;
-    
-}
-
-.container3{
-    height: 60px;
-    background-color: white;
-    border: solid 1px rgb(79, 77, 77);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-}
-
