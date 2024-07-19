@@ -135,7 +135,7 @@ section{
     align-items: center;
     flex-direction: column;
     margin-left: 2%;
-   justify-content: space-between;
+    justify-content: space-between;
 
 }
 
@@ -150,8 +150,6 @@ section{
     display: flex;
     align-items: center;
     height: 60px;
-
-
 }
 
 button{
