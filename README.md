@@ -18,6 +18,6 @@ https://www.figma.com/design/HYWuus1rbccSTUFoj3rsYb/Untitled?node-id=1-102&t=IOj
 
 Para el desarrollo de este proyecto se hizo uso de los siguientes lenguajes:
 
-- **HTML5:** Se uso para controlar la estructura de diseño de cada una de las páginas.
+- **HTML5:** Se uso para controlar la estructura de deiseño de cada una de las páginas.
 
 - **CSS**: Se uso para generar los estilos predeterminados por el área de diseño. 
