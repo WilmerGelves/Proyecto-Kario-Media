@@ -99,7 +99,7 @@ text-align: end;
 }
 .search{
     text-align: center;
-    width: 150%;
+    width: 70%;
 }
 .search h1{
     font-size: 1.8em;
@@ -108,7 +108,6 @@ text-align: end;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    border: 2px solid black;
     padding: 10px;
     border-radius: 10px;
     gap: 5px;
@@ -119,11 +118,15 @@ i{
     color: rgb(146, 144, 144);
 }
 input{
-    border: 0;
-    font-size: 1em;
-    color: rgb(206, 202, 202);
+    border: 2px solid rgb(146, 144, 144);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .8em;
+    width: 100%;
 }
-
+input::placeholder{
+    color: rgb(206, 202, 202); ;
+}
 /*Sección preguntas frecuentes*/
 .preguntas-frecuentes{
     display: flex;
