@@ -66,16 +66,55 @@ img{
     max-width: 100%;
 }
 p{
-    font-weight: bold;
+    font-weight: normal;
 }
 a{
     padding: 5px;
     color: black;
     transition: all;
     transition-duration: .2s;
-
     font-weight: bolder;
 }
 a:hover{
     color: rgb(255, 114, 33);
+}
+@media (max-width: 480px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height:80vh;
+        width: 100%;
+        border: 5px  solid rgb(255, 114, 33);
+        border-radius: 15px;
+        background-color: transparent;
+        box-shadow: 1px 1px  10px rgb(255, 114, 33) ;
+        color: rgb(255, 114, 33);
+    }
+    .item{
+        padding: 50px;
+    }
+    img,a{
+        display: inline-block;
+    }
+    img{
+        max-width: 100%;
+    }
+    p{
+        font-weight: normal;
+    }
+    a{
+        padding: 5px;
+        color: black;
+        transition: all;
+        transition-duration: .2s;
+        color: white;
+        font-weight: normal;
+        font-weight: bolder;
+    }
+    a:hover{
+        color: rgb(242, 139, 79);
+    }
 }
