@@ -231,30 +231,17 @@ section{
     margin: 0.5vw;
 }
 
-.action{
-    margin-top: 60px;
-    border: solid;
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
 
-.move{
-    display: flex;
-    align-items: center;
-    height: 60px;
-    border: solid 1px;
-}
-
-.move1{
-    margin-bottom: 2%;
-}
 
 section{
     display: flex;
     justify-content: center;
+}
+
+.colum1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .container1{
     height: 60px;
@@ -262,7 +249,10 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
+.container1 div{
+    font-weight: bold;
 }
 
 
@@ -282,8 +272,37 @@ section{
     width: 9vw;
 }
 
+.item img{
+    height: 6vh;
+    border-radius: 50%;
+}
+
+.action{
+    margin-top: 60px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1.6%;
+}
+
+.move{
+    display: flex;
+    align-items: center;
+    height: 60px;
+
+}
+
+.move1{
+    margin-bottom: 2%;
+}
+
+.boton{
+    height: 8vh;
+}
 button{
-    height: 5vh;
+    height: 6vh;
     width: 13vw;
     border-radius: 25px;
     border: none;

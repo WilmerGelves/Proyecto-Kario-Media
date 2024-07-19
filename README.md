@@ -10,7 +10,7 @@ El proyecto se desarrolló para pantallas con una resolución de 1920x1080  y pa
 * Wilmer Gelves
 * Ricardo Arévalo.
 
-**Notas:**  El proyecto se enfocó en desarrollar solo diseño. En las diferentes pestañas se hizo uso de botones y elementos que en una página completamente funcional son totalmente funcionales.Por ende se resalta que varios elementos del diseño no cuentan con dichas funcionalidades. 
+**Notas:**  El proyecto se enfocó en desarrollar solo diseño. En las diferentes pestañas se hizo uso de botones y elementos que en una página completamente funcional son totalmente funcionales.Por ende se resalta que varios elementos del diseño no cuentan con dichas funcionalidades. En cuanto a la vizualización de las tablas, estas no son visibles correctamente en movil. 
 
 ## Propuesta de diseño de pestañas
 
