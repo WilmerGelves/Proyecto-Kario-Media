@@ -102,7 +102,11 @@ section{
     border-radius: 18px;
     background-color: rgb(226, 224, 224);
 }
-
+.colum1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .item{
     display: flex;
     justify-content: center;
@@ -128,15 +132,18 @@ section{
     justify-content: space-between;
     align-items: center;
     margin-top: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .action{
+    margin-left: 2%;
+    width: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    margin-left: 2%;
-    justify-content: space-between;
-
+    
 }
 
 .hea{
