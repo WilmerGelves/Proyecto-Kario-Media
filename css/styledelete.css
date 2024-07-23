@@ -111,6 +111,8 @@ section{
     display: flex;
     justify-content: center;
     width: 10vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container1{

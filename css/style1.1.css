@@ -129,6 +129,8 @@ section{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item{
@@ -155,7 +157,6 @@ section{
 }
 
 .move{
-    border: solid;
     display: flex;
     align-items: center;
     height: 60px;

@@ -249,6 +249,8 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container1 div{
@@ -264,12 +266,16 @@ section{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item{
     display: flex;
     justify-content: center;
     width: 9vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item img{
