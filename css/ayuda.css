@@ -216,7 +216,7 @@ input::placeholder{
     }
     .img-ayuda{
         display: inline-block;
-        width: 100%;
+        width: 80%;
         opacity: .3; 
     }
 
@@ -225,7 +225,7 @@ input::placeholder{
     }
     .search{
         text-align: center;
-        width: 60%;
+        width: 80%;
     }
     .search h1{
         font-size: 1.5em;
